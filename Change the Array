@@ -1,0 +1,95 @@
+Change the Array
+
+Problem Description
+
+Given an integer array A of size N. Perform M operations given in array B and C.
+
+For each operation, you can choose atmost B[i] elements(possibly 0) in A and assign the value C[i].
+
+Find the minimum possible sum of the array after M operations.
+
+
+Problem Constraints
+
+1 <= B[i] <= N <= 105
+1 <= A[i], C[i] <= 104
+1 <= M <= 105
+
+
+Input Format
+
+First argument is an integer array A of size N.
+Second argument is an integer array B of size M.
+Third argument is an integer array C of size M.
+
+
+Output Format
+
+Return an integer denoting the minimum sum of array.
+
+
+Example Input
+
+Input 1:
+
+ A = [8, 15, 16, 3, 10] 
+ B = [2, 1, 1]
+ C = [2, 3, 1]
+ 
+
+Input 2:
+
+ A = [8, 19, 25, 1, 1]
+ B = [3, 4, 1]
+ C = [1, 5, 10]
+ 
+
+
+
+Example Output
+
+Output 1:
+
+ 11
+ 
+
+Output 2:
+
+ 5
+ 
+
+
+
+Example Explanation
+
+Explanation 1:
+
+ We can change our array into [2, 2, 3, 3, 1] so that sum becomes minimum which is 11.
+ For first operation:
+    B = 2, C = 2
+    We can choose 8,15 and change to 2,2.
+    So our Array looks like [2, 2, 16, 3, 10] after first operation.
+ For second operation:
+    B = 1, C = 3
+    We can choose 16 and change to 3.
+    So our Array looks like [2, 2, 3, 3, 10] after second operation.
+ For third operation:
+    B = 1, C = 1
+    We can choose 10 and change to 1.
+    So our Array looks like [2, 2, 3, 3, 1] after third operation.
+
+Explanation 2:
+
+ We can change our array into [1, 1, 1, 1, 1] so that sum becomes minimum which is 5.
+ For first operation:
+    B = 3, C = 1
+    We can choose 8, 19, 25 and change to 1, 1, 1.
+    So our Array looks like [1, 1, 1, 1, 1] after first operation.
+ For second operation:
+    B = 4, C = 5
+    We can choose 0 elements.
+    So our Array looks like [1, 1, 1, 1, 1] after second operation.
+ For third operation:
+    B = 1, C = 10
+    We can choose 0 elements.
+    So our Array looks like [1, 1, 1, 1, 1] after third operation.
